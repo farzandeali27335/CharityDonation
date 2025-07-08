@@ -149,7 +149,8 @@ fun LoginScreen() {
                 text = "Register Now",
                 style = MaterialTheme.typography.bodyLarge.copy(fontWeight = FontWeight.Black),
                 modifier = Modifier.clickable {
-
+                    context.startActivity(Intent(context, RegisterActivity::class.java))
+                    context.finish()
                 }
             )
 
